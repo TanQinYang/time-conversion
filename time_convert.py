@@ -1,0 +1,6 @@
+time = int(input("Enter time in hours: "))
+week = (time - time % (24 * 7)) // (24 * 7)
+time = time % (24 * 7)
+days = (time - time % (24)) // (24)
+time = time % (24)
+print(week,"weeks,",days,"days, and",time,"hours")
